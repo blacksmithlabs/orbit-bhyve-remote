@@ -67,15 +67,15 @@ See src/routers/apiRouter.js for implementations
 # Sample IFTTT Applet setup
 
 ## Trigger:
-Service: Google Assistant
-Trigger: Say a phrase with a number
-What do you want to say? water zone #
+Service: Google Assistant \
+Trigger: Say a phrase with a number \
+What do you want to say? water zone # \
 What do you want the system to say in response? Aguamenti
 
 ## Action:
-Service: Webhooks
-Action: Make a web request
-URL: http://my.service.url:1337/api/watering/zone/{{NumberField}}
-Method: PUT
-Content Type: application/json
+Service: Webhooks \
+Action: Make a web request \
+URL: http://my.service.url:1337/api/watering/zone/{{NumberField}} \
+Method: PUT \
+Content Type: application/json \
 Body: {"minutes": 15, "token": "security token from config.json file"}
