@@ -1,0 +1,33 @@
+{
+  "name": "bhyve-remote-control",
+  "version": "1.0.0",
+  "description": "BHyve Remote Control Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "docker build -t drductus/bhybe-remote-control"
+  },
+  "keywords": [
+    "bhybe",
+    "smart",
+    "smarthome",
+    "automation",
+    "irrigation",
+    "sprinklers",
+    "ifttt",
+    "orbit"
+  ],
+  "author": "Brian Armstrong <dr.ductus@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/blacksmithlabs/orbit-byhve-remote",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.1"
+  }
+}

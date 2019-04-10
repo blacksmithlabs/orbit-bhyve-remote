@@ -1,0 +1,4 @@
+docker-test
+.git
+/node_modules/
+config.json

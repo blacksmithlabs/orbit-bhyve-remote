@@ -1,0 +1,37 @@
+# Build from source code
+version: '3' # version 2 required for raspberrypi
+services:
+  remote:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./volumes/config:/bhyve/config
+      - .:/usr/src/app
+    restart: unless-stopped
+
+
+# Build for x84/x64
+version: '3'
+services:
+  container_name: bhyve-remote
+  remote:
+    image: 'drductus/bhyve-remote:latest'
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./volumes/config:/bhyve/config
+    restart: unless-stopped
+
+
+# Build for raspberrypi
+version: '2' # Must be version 2 for raspberrypi
+services:
+  remote:
+    container_name: bhyve-remote
+    image: 'drductus/bhyve-remote:raspbian'
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config:/bhyve/config
+    restart: unless-stopped
