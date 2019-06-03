@@ -28,6 +28,6 @@
     "ws": "^6.2.1"
   },
   "devDependencies": {
-    "mocha": "^6.1.1"
+    "mocha": "^6.1.4"
   }
 }
