@@ -27,7 +27,12 @@ function buildRouter(config) {
                 });
 
             app.delete('/watering', (req, res) => {
-                api.modeOff();
+                const { mode = 'off' } = req.body;
+                if (mode === 'off') {
+                    api.modeOff();
+                } else {
+                    api.modeAuto();
+                }
                 res.sendStatus(200);
             });
 

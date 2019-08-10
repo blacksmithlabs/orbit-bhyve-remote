@@ -181,6 +181,16 @@ class API {
         }));
     }
 
+    modeAuto() {
+        this._ws.connect(this._token, this._config.deviceId)
+        .then(ws => ws.send({
+            event: "change_mode",
+            mode: "auto",
+            device_id: this._config.deviceId,
+            timestamp: new Date().toISOString(),
+        }))
+    }
+
     modeOff() {
         this._ws.connect(this._token, this._config.deviceId)
         .then(ws => ws.send({

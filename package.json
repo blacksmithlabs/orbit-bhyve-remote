@@ -1,6 +1,6 @@
 {
   "name": "bhyve-remote-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BHyve Remote Control Application",
   "main": "server.js",
   "scripts": {
