@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": "https://github.com/blacksmithlabs/orbit-byhve-remote",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "pug": "^3.0.1",
