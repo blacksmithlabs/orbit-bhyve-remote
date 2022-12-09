@@ -23,7 +23,7 @@
   "dependencies": {
     "axios": "^0.21.2",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "pug": "^3.0.1",
     "ws": "^7.4.6"
   },
